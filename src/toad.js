@@ -1,6 +1,6 @@
 var Toad = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="Characters/toad.png" class="character spin"></span>');
+  this.$node = $('<img src="Characters/toad.png" class="character spin">');
 };
 
 Toad.prototype = Object.create(makeDancer.prototype);

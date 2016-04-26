@@ -1,6 +1,6 @@
 var Koopa = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="Characters/koopa.png" class="character spin"></span>');
+  this.$node = $('<img src="Characters/koopa.png" class="character spin">');
 };
 
 Koopa.prototype = Object.create(makeDancer.prototype);
