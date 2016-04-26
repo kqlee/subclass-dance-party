@@ -9,5 +9,4 @@ Luigi.prototype.constructor = Luigi;
 
 Luigi.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  this.$node.toggle();
 };
