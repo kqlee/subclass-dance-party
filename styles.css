@@ -1,3 +1,42 @@
+@keyframes spinning {
+  from {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(-30deg);
+  }
+}
+
+
+
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
 body, html{
   height:100%;
 }
@@ -24,4 +63,24 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  -webkit-animation: blink 2s infinite;
+  -moz-animation: blink 2s infinite;
+  -o-animation: blink 2s infinite;
+  animation: blink 2s infinite; 
 }
+
+.spinner {
+  -webkit-animation: spinning 2s infinite;
+  -moz-animation: spinning 2s infinite;
+  -o-animation: spinning 2s infinite;
+  animation: spinning 2s infinite;
+}
+
+.rotate {
+  -webkit-animation: spinning 2s infinite;
+  -moz-animation: spinning 2s infinite;
+  -o-animation: spinning 2s infinite;
+  animation: spinning 2s infinite;
+}
+
+
