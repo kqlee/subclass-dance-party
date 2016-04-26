@@ -1,6 +1,6 @@
 var Bowser = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="Characters/bowser.png" class="character rotate"></span>');
+  this.$node = $('<img src="Characters/bowser.png" class="character rotate">');
 };
 
 Bowser.prototype = Object.create(makeDancer.prototype);
