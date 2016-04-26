@@ -54,6 +54,7 @@ body{
   font-size: 18px;
   max-height:600px; 
   background: cover;
+  position: relative;
 }
 body, a:link, a:visited, a:active{
   color: orange;
@@ -110,8 +111,11 @@ body, a:link, a:visited, a:active{
   animation: jump 2s infinite;
 }
 
-.jump:hover {
-  
+.extrastyle:hover {
+  -webkit-animation: spinning 2s infinite;
+  -moz-animation: spinning 2s infinite;
+  -o-animation: spinning 2s infinite;
+  animation: spinning 2s infinite;
 }
 
 
@@ -125,7 +129,7 @@ body, a:link, a:visited, a:active{
 
 #menu_button {
   height: 25px;
-  width: 100px;
+  width: 200px;
   background-color: white;
   border-radius: 10px;
 }
@@ -166,3 +170,16 @@ ul, li {
   font-weight:bold;
   color: #F00880;
 }
+
+/* Popup Options */
+
+.popups {
+  position: absolute;
+  left: 20%;
+  right: 0;
+  height: 100px;
+  width: 800px;
+  text-align: center;
+  color: red;
+}
+

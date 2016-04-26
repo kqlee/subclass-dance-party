@@ -1,13 +1,9 @@
 var Boo = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="Characters/boo.png" class="character blink">');
+  this.$node = $('<img src="Characters/boo.png" class="character">');
   this.setPosition();
 };
 
-Boo.prototype = Object.create(makeDancer.prototype);
+Boo.prototype = Object.create(Blinker.prototype);
 
 Boo.prototype.constructor = Boo;
-
-Boo.prototype.step = function() {
-  makeDancer.prototype.step.call(this);
-};

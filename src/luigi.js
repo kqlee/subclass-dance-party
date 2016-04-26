@@ -1,13 +1,9 @@
 var Luigi = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<img src="Characters/luigi.png" class="character jump">');
+  this.$node = $('<img src="Characters/luigi.png" class="character extrastyle">');
   this.setPosition();
 };
 
-Luigi.prototype = Object.create(makeDancer.prototype);
+Luigi.prototype = Object.create(Jumper.prototype);
 
 Luigi.prototype.constructor = Luigi;
-
-Luigi.prototype.step = function() {
-  makeDancer.prototype.step.call(this);
-};

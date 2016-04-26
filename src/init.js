@@ -11,12 +11,7 @@ $(document).ready(function() {
 
     $("ul#file_menu").on("mouseleave", function () {
       $('ul#file_menu').slideUp();
-    });    
-
-    // $('ul.file_menu').bind('click', function(){
-    //   $('ul.file_menu').slideUp('medium'); 
-    //   console.log('clicked');
-    // });
+    });
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -40,9 +35,12 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random() - 100,
-      $("body").width() * Math.random() - 100,
-      Math.random() * 1000
+      //top
+      (($("body").height() - 300) * Math.random()) + 150,
+      //left
+      (($("body").width() - 200) * Math.random()) + 100,
+      //animation duration
+      (Math.random() * 2000) + 1000
     );
     $('body').append(dancer.$node);
 
@@ -55,17 +53,30 @@ $(document).ready(function() {
   var images = ['birthday.jpg', 'bubbles.jpg', 'disco.jpg', 'energy.jpg', 'party.jpg'];
   var eachImg = function(array) {
     for (var i = 0; i < array.length; i++) {
-      $('html').css({'background-image': 'url(Backgrounds/' + images[Math.floor(Math.random() * images.length)] + ')'});
-      $('html').css({'background-size': 'cover'});
     }
   };
 
+  var randIndex = Math.floor(Math.random() * (images.length));
+  $('html').css({'background-image': 'url(Backgrounds/' + images[randIndex] + ')'});
+  $('html').css({'background-size': 'cover'});
+
 
   setInterval(function() {
-    eachImg(images);
-  }, 6000); 
+    var randIndex = Math.floor(Math.random() * (images.length));
+    $('html').css({'background-image': 'url(Backgrounds/' + images[randIndex] + ')'});
+    $('html').css({'background-size': 'cover'});
+  }, 7000); 
 
-  eachImg(images);
+  //random text
+
+  var text = ['LET\'S DANCE!', 'PRESS SPACE!!', 'ADD MORE DANCERS!', 'PRESS LEFT!!', '~~PARTY TIME~~'];
+  var randomIndex = Math.floor(Math.random() * (text.length));
+  $('.popups h1').text(text[randomIndex]);
+
+  setInterval(function() {
+    var randIndex = Math.floor(Math.random() * (text.length));
+    $('.popups h1').text(text[randIndex]);
+  }, 5500); 
 
   //Arrow keys & spacebar
 
@@ -116,8 +127,8 @@ $(document).ready(function() {
       }
       if (e.keyCode === 32) {
         window.dancers.forEach(function(dancer) {
-          dancer.top = $("body").height() * Math.random() - 100;
-          dancer.left = $("body").width() * Math.random() - 100;
+          dancer.top = (($("body").height() - 300) * Math.random()) + 150;
+          dancer.left = (($("body").width() - 200) * Math.random()) + 100;
           dancer.setPosition();
         });
       }
