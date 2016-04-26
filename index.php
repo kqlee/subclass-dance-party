@@ -1,1 +1,1 @@
-<?php include 'dancefloor.html'?>
+<?php include_once('dancefloor.html');?>
