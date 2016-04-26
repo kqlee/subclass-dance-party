@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>Object Dance Party</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
@@ -16,12 +18,36 @@
     <script src="src/yoshi.js"></script>
   </head>
   <body>
-    <div class="topbar">
+<!--     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">Add Mario</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="Mario">Add Mario</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Boo">Add Booo</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Boo">Add Boo</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Bowser">Add Bowser</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Koopa">Add Koopa</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Luigi">Add Luigi</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Princess">Add Princess</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Toad">Add Toad</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Yoshi">Add Yoshi</a>
+    </div> -->
+
+    <div id="menu_box">
+      
+      <input type="button" id="menu_button" value="Add Dancer">
+
+      <ul id="file_menu">
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Mario">Mario</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Boo">Boo</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Bowser">Bowser</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Koopa">Koopa</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Luigi">Luigi</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Princess">Princess</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Toad">Toad</a></li>
+        <li class="menu_li"><a href="#" class="addDancerButton" data-dancer-maker-function-name="Yoshi">Yoshi</a></li>
+      </ul>
+
     </div>
+
+
     <script src="src/init.js"></script>
   </body>
 </html>

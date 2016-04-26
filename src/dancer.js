@@ -3,6 +3,8 @@
 var makeDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
+  // this.bottom = bottom;
+  // this.right = right;
   this.timeBetweenSteps = timeBetweenSteps;
   this.$node = $('<span class="spinner dancer"></span>');
 };

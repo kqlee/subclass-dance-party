@@ -34,8 +34,6 @@
   }
 }
 
-
-
 @keyframes blink {
   0% {
     opacity: 0;
@@ -53,21 +51,22 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
+  max-height:600px; 
+  background: cover;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: orange;
 }
 .title, .addDancerButton{
   padding:5px 12px;
-  float:right;
+  float:left;
 }
 
 .character {
   position: absolute;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
 
 .topbar{
@@ -111,3 +110,59 @@ body, a:link, a:visited, a:active{
   animation: jump 2s infinite;
 }
 
+.jump:hover {
+  
+}
+
+
+/* Menu Options */
+
+#menu_box {
+  height: 32px;
+  width: 184px;
+  margin: left;
+}
+
+#menu_button {
+  height: 25px;
+  width: 100px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+ul, li {
+  margin:0; 
+  padding:0; 
+  list-style:none;
+}
+
+.menu_class {
+  border:1px solid #1c1c1c;
+}
+
+#file_menu {
+  display:none;
+  width:300px;
+  border: 1px solid #1c1c1c;
+  position: absolute;
+  background-color: white; 
+  z-index: 1;
+}
+
+.file_menu li {
+  background-color: #302f2f;
+  position: relative;
+}
+
+.file_menu li a {
+  color:#FFFFFF; 
+  text-decoration:none; 
+  padding:10px; 
+  display:block;
+}
+
+.file_menu li a:hover {
+  padding:10px;
+  font-weight:bold;
+  color: #F00880;
+}

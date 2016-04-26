@@ -1,6 +1,7 @@
 var Yoshi = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<img src="Characters/yoshi.png" class="character blink">');
+  this.setPosition();
 };
 
 Yoshi.prototype = Object.create(makeDancer.prototype);
