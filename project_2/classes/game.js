@@ -39,9 +39,9 @@ Game.prototype.stop = function(){
 }
 
 Game.prototype.checkWin = function(){
-  if ( window.enemyCount === 0 ){
+  if ( window.enemyCount <= 0 ){
     window.game.stop();  
-    window.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    window.ctx.clearRect(0, 0, window.canvas.width, window.canvas.height);
     window.location = 'win.html';
   }
 }
