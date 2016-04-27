@@ -4,13 +4,14 @@
   "description": "bareminumu and hr invaders",
   "main": ".eslintrc.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/digitized/2016-04-subclass-dance-party.git"
   },
-  "author": "",
+  "author": "Alex Lee and Kent Lee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/digitized/2016-04-subclass-dance-party/issues"
