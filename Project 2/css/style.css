@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+}
+
+#title {
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  left: 20%;
+  top: 15%;
+}
+
+#startbutton {
+  position: absolute;
+  border-radius: 12px;
+  background-color: white;
+  height: 60px;
+  width: 200px;
+  left: 40%;
+  bottom: 20%;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px white solid;
+  font: 25px serif;
+}
+
+#startbutton:hover {
+  background-color: green;
+}
